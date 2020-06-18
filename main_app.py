@@ -15,10 +15,9 @@ def home():
 @app.route('/', methods=['POST'])
 @app.route('/home', methods=['POST'])
 def go_to():
-	url = request.form['text']
+	url = request.form.get('text')
 	parsed_url = urlparse(url)
 	print(parsed_url.path)
-	#return redirect(url)
 	return urllib.request.urlopen(url).read()
 
 @app.route('/post1')
