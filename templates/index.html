@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1>Quarantine Blog</h1>
+<br>
+<img src="{{ image_file }}" class="img-fluid" alt="Responsive image">
+<br>
+<h5>I made this blog during quarantine. I'm a noob developer, I don'y know how to make button :(</h5>
+<h5>You need to insert the url of the post that you want to read...</h5>
+<br>
+<form method="POST">
+    <input name="text">
+    <input type="submit">
+</form>
+
+{% endblock %}
