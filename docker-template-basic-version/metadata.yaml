@@ -1,0 +1,13 @@
+title: "example"
+description: >
+    An example challenge!
+
+tags: ["web", "example"]
+points: 0.5
+flag: "flg{skK6FIPhDuOb1Vwq}"
+
+network_info:
+    hostname: quarantineblog.example.seclab.dais.unive.it
+    port: 443
+    # Port exposed by the container
+    container_port: 80
