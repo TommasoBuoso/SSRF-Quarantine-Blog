@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1>Quarantine Blog</h1>
+<br>
+<img src="{{ image_file }}" class="img-fluid" alt="Responsive image">
+<br>
+<h5>I made this blog during quarantine. I'm a noob developer, I don'y know how to make button on navbar :(</h5>
+<h5>You need to choose the post that you want to read.</h5>
+<br>
+<form method="POST">
+	<select name="text">
+		<option value="http://localhost:80/post1">Post 1</option>
+		<option value="http://localhost:80/post2">Post 2</option>
+	</select>
+	<button type="submit">Go to post</button>
+</form>
+<br>
+<h2>Post 1 - Quarantine jokes</h2>
+<br>
+<h2>Post 2 - Quarantine funny images</h2>
+
+
+{% endblock %}
