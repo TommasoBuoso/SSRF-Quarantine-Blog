@@ -1,6 +1,5 @@
 from flask import Flask, render_template, url_for, request, redirect
 import urllib.request
-from urllib.parse import urlparse
 
 # config
 app = Flask(__name__)
@@ -17,13 +16,8 @@ def home():
 @app.route('/home', methods=['POST'])
 def go_to():
 	url = request.form.get('text')		
-	parsed_url = urlparse(url)							#create a 6-item named tuple that contains the parse of the url in the form 'scheme://netloc/path;parameters?query#fragment'
-	print(parsed_url)
-	if 'localhost:80' in parsed_url.netloc:				#whitelist 'localhost:80'
-		#if '#' not in parsed_url.netloc:				#blacklist '#'
+	if 'localhost:80' in url:				#whitelist 'localhost:80'
 		return urllib.request.urlopen(url).read()
-		#else:
-		#	return 'I don\'t like instagram'
 	else:
 		return '\'My URL is...inevitable\''
 
@@ -40,3 +34,5 @@ def get_post2():
 # start server
 if __name__ == '__main__':
 	app.run(host = "0.0.0.0", port = 80)
+
+#http://localhost:5001/admin#localhost:80
