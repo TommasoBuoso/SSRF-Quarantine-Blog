@@ -74,4 +74,4 @@ One possible fix to this vulnerability could be change the action of the drop do
 ## Credits:
 - https://github.com/jakewright/tutorials/tree/master/docker/02-docker-compose repository from which I took part of the code for the docker container;
 
-- https://secgroup.dais.unive.it/wp-content/uploads/2020/03/more_server.pdf and https://portswigger.net/web-security/ssrf nozioni teoriche e pratiche su SSRF.
+- https://secgroup.dais.unive.it/wp-content/uploads/2020/03/more_server.pdf and https://portswigger.net/web-security/ssrf theoretical and practical notions about SSRF.
