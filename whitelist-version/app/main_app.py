@@ -51,5 +51,3 @@ def get_post4():
 # start server
 if __name__ == '__main__':
 	app.run(host = "0.0.0.0", port = 80)
-
-#http://localhost:5001/admin#localhost:80
