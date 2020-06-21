@@ -55,7 +55,7 @@ This is the solution to the basic version of the ctf challenge, but for the blac
 
 ### Whitelist fixing
 
-Don't perform whitelisting by yourself but using a library for perform the parsing and the opening of the url, for example urllib.parse and urllib.request that, in python3, also solve some vulnerabillity of their previous version, like:
+Don't perform whitelisting by yourself but using a library for perform the parsing and the opening of the url, for example urllib.parse and urllib.request that, in python3, also solve some vulnerability of their previous version, like:
 
 ```
 http://1.1.1.1 &@2.2.2.2# @3.3.3.3/
